@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <link rel="icon" type="image/png" href="/public/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page[title_key] | default: page.title }} - {{ site.title }}</title>    
+    <link rel="stylesheet" href="https://cdn.vash.network/fontawesome/6.1.0/css/all.css">
+    <link rel="stylesheet" href="{{ "/public/build/app.css" | relative_url }}">
+    <script src="{{ "/public/js/jquery-3.6.0.min.js" | relative_url }}"></script>
+    <script src="{{ "/public/build/app.js" | relative_url }}"></script>
+  </head>
+  <body>
+    {% include header.html %}
+    {{ content }}    
+    {% include footer.html %}
+  </body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</html>

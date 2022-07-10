@@ -1,0 +1,12 @@
+url: "https://example.com" # the base hostname & protocol for your site, e.g. http://example.com
+title: "集貨網站" # the name of your site, e.g. ACME Corp.
+
+plugins: []
+exclude: [
+  "assets/*",
+  "webpack.config.js",
+  "LICENSE",
+  "package.json",
+  "package-lock.json",
+  "README.md"
+]
